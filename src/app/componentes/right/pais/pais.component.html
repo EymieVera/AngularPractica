@@ -1,1 +1,23 @@
-<p>pais works!</p>
+<div class="col-md-12">
+    <h4 class="text-success">País</h4>
+
+    <table class="table table-striped text-white">
+        <thead class="bg-dark">
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Población</th>
+                <th scope="col">Continente</th>
+            </tr>
+        </thead>
+        <tbody class="bg-success">
+            <tr *ngFor="let pais of paises">
+                <th scope="row">{{pais.alpha3Code}}</th>
+                <td>{{pais.name}}</td>
+                <td>{{pais.population}}</td>
+                <td>{{pais.region}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
